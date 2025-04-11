@@ -1,0 +1,115 @@
+[
+    {
+        "name": "ObesityTypePrediction",
+        "category": "DataMining",
+        "image": "../assets/images/ObesityTypePrediction.png",
+        "description": "Predição de Niveis de Obesidades com base em dados médicos aberto.",
+        "live": "https://github.com/ViniciusKanh/ObesityDataMining_UNESP/blob/main/AnaliseObesidade.ipynb",
+        "code": "https://github.com/ViniciusKanh/ObesityDataMining_UNESP/tree/main"
+    },
+    {
+        "name": "Anemia Classification",
+        "category": "DataMining",
+        "image": "../assets/images/Anemia-Classification.png",
+        "description": "🩸 Anemia Classification with Machine Learning 🧬",
+        "live": "https://github.com/ViniciusKanh/Anemia-Classification-ML/blob/main/AnemiaClassifica%C3%A7%C3%A3o.ipynb",
+        "code": "https://github.com/ViniciusKanh/Anemia-Classification-ML"
+    },
+    {
+        "name": "DiabetesPrediction",
+        "category": "DataMining",
+        "image": "../assets/images/DiabetesPrediction.png",
+        "description": "AVALIAÇÃO E COMPARAÇÃO DE ALGORITMOS DE APRENDIZADO DE MÁQUINA PARA CLASSIFICAÇÃO DE DADOS MÉDICOS: UM ESTUDO SOBRE A PREVISÃO DE DIABETES",
+        "live": "https://github.com/ViniciusKanh/AM-Predict-Diabetes/blob/main/COMPARISON%20AND%20SELECTION%20OF%20MACHINE%20LEARNING%20ALGORITHMS%20FOR%20DIABETES%20PREDICTION_%20AN%20EXPLORATORY%20QUANTITATIVE%20STUDY%20BASED%20ON%20MEDICAL%20DATA%20ANALYSIS%20%E2%80%93%20ISSN%201678-0817%20Qualis%20B2.pdf",
+        "code": "https://github.com/ViniciusKanh/AM-Predict-Diabetes"
+    },
+    {
+        "name": "ProdTrack",
+        "category": "UX",
+        "image": "../assets/images/ProdTrack.png",
+        "description": "Gerenciador de Ordem de Produção",
+        "live": "https://github.com/ViniciusKanh/Test01-ProdTrack/blob/master/README.md",
+        "code": "https://github.com/ViniciusKanh/Test01-ProdTrack"
+    },
+    {
+        "name": "EnergyMgmt Previsao",
+        "category": "DataMining",
+        "image": "../assets/images/EnergyMgmt-ML-Previsao.png",
+        "description": "🌟 EnergyMgmt-ML-Previsao: Transforming Energy Management with Machine Learning 🌟",
+        "live": "https://github.com/ViniciusKanh/EnergyMgmt-ML-Previsao/blob/main/RegLin_EficienciaEnergetica.ipynb",
+        "code": "https://github.com/ViniciusKanh/EnergyMgmt-ML-Previsao"
+    },
+    {
+        "name": "TrafficSigns-SafeRouteAI",
+        "category": "ArtificialIntelligence",
+        "image": "../assets/images/TrafficSigns-SafeRouteAI.png",
+        "description": "TrafficSigns-SafeRouteAI: Detecção de Sinais de Trânsito com IA",
+        "live": "https://nbviewer.org/github/ViniciusKanh/TrafficSigns-SafeRouteAI/blob/main/TrafficSigns_SafeRouteAI.ipynb",
+        "code": "https://github.com/ViniciusKanh/TrafficSigns-SafeRouteAI"
+    },
+    {
+        "name": "Digital-Surveillance-Vigilante-Inteligente",
+        "category": "ArtificialIntelligence",
+        "image": "../assets/images/Digital-Surveillance-Vigilante-Inteligente.png",
+        "description": "Digital Surveillance: Vigilante Inteligente",
+        "live": "https://github.com/ViniciusKanh/Digital-Surveillance-Vigilante-Inteligente/blob/main/Jupyter%20Notebook%20Viewer.pdf",
+        "code": "https://github.com/ViniciusKanh/Digital-Surveillance-Vigilante-Inteligente"
+    },
+    {
+        "name": "FluxoEnergeIA",
+        "category": "ArtificialIntelligence",
+        "image": "../assets/images/FluxoEnergeIA.png",
+        "description": "🌟 FluxoEnergeIA: Modelo Preditivo de Eficiência Energética Industrial 🌟",
+        "live": "https://github.com/ViniciusKanh/FluxoEnergeIA/blob/main/FluxoEnergeIA.ipynb",
+        "code": "https://github.com/ViniciusKanh/FluxoEnergeIA"
+    },
+    {
+        "name": "DetectAI-DetectorAntiFraude-AI",
+        "category": "DataMining",
+        "image": "../assets/images/DetectAI-DetectorAntiFraude-AI.png",
+        "description": "DetectAI: Sistema Preditivo de Antifraude 🔍",
+        "live": "https://github.com/ViniciusKanh/DetectAI-DetectorAntiFraude-AI/blob/main/DetectAI_Sistema_Preditivo_de_Antifraude.ipynb",
+        "code": "https://github.com/ViniciusKanh/DetectAI-DetectorAntiFraude-AI"
+    }, 
+    {
+        "name": "ObjectPersonDetection-YOLOv5",
+        "category": "ArtificialIntelligence",
+        "image": "../assets/images/ObjectPersonDetection-YOLOv5.png",
+        "description": "Detecção de Objetos e Pessoas com YOLOv5",
+        "live": "https://nbviewer.org/github/ViniciusKanh/ObjectPersonDetection-YOLOv5/blob/main/ProjetoPDI_ObjectPersonDetection_YOLOv5.ipynb",
+        "code": "https://github.com/ViniciusKanh/ObjectPersonDetection-YOLOv5"
+    },
+    {
+        "name": "Pharma Script Summarizer",
+        "category": "ArtificialIntelligence",
+        "image": "../assets/images/PharmaScriptSummarizer.png",
+        "description": "Reconhecimento e Sumarização de Receitas Médicas Digitalizadas em PDF",
+        "live": "https://nbviewer.org/github/ViniciusKanh/PharmaScriptSummarizer/blob/main/Projeto_PDI.ipynb",
+        "code": "https://github.com/ViniciusKanh/PharmaScriptSummarizer"
+    },
+    {
+        "name": "Deep Learning Energetic Efficiency",
+        "category": "DataMining",
+        "image": "../assets/images/DeepLearning_EnergeticEfficiency.png",
+        "description": "🌍 Aplicação de Deep Learning na Predição do Consumo de Energia em Tetuão ⚡",
+        "live": "https://nbviewer.org/github/ViniciusKanh/DeepLearning_EnergeticEfficiency/blob/main/DeepLearning_Consumo_Teu%C3%A3o.ipynb",
+        "code": "https://github.com/ViniciusKanh/DeepLearning_EnergeticEfficiency"
+    },
+    {
+        "name": "BigData Spark",
+        "category": "ArtificialIntelligence",
+        "image": "../assets/images/BigDataSpark.png",
+        "description": "Sistema Distribuído de Busca por Palavras-chave em Documentos PDF usando Big Data e Spark",
+        "live": "https://nbviewer.org/github/ViniciusKanh/BigDataSparkIFSP/blob/main/BigData.ipynb",
+        "code": "https://github.com/ViniciusKanh/BigDataSparkIFSP"
+    },    
+    {
+        "name": "Dissolved Gas Analysis (DGA) Machine Learning",
+        "category": "ArtificialIntelligence",
+        "image": "../assets/images/DGA.png",
+        "description": "DESENVOLVIMENTO DE UMA FERRAMENTA DE AUXÍLIO À MANUTENÇÃO PREDITIVA E PREVENTIVA PARA O DIAGNÓSTICO DE FALHAS EM TRANSFORMADORES DE POTÊNCIA EMPREGANDO-SE O PROCESSAMENTO DE DADOS E O ALGORITMO FLORESTA DE CAMINHOS ÓTIMOS",
+        "live": "https://nbviewer.org/github/ViniciusKanh/IC_MachineLearning_DGA/blob/main/DGA_OPF_IC.ipynb",
+        "code": "https://github.com/ViniciusKanh/IC_MachineLearning_DGA"
+    }
+    
+]

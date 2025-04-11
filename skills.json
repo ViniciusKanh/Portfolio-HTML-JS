@@ -1,0 +1,75 @@
+[
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/python--v1.png"
+    },
+    {
+        "name": "Pandas",
+        "icon": "https://img.icons8.com/?size=45&id=xSkewUSqtErH&format=png&color=000000"
+    },
+    {
+        "name": "Scikit-learn",
+        "icon": "https://img.icons8.com/?size=45&id=doJ32Ly3G4aB&format=png&color=000000"
+    },
+    {
+        "name": "Power Automater",
+        "icon": "https://img.icons8.com/?size=45&id=kTTt25v6Drpd&format=png&color=000000"
+    },
+    {
+        "name": "SQL",
+        "icon": "https://img.icons8.com/color/48/sql.png"
+    },
+    {
+        "name": "Power BI",
+        "icon": "https://img.icons8.com/color/48/power-bi.png"
+    },
+    {
+        "name": "Excel",
+        "icon": "https://img.icons8.com/fluency/48/microsoft-excel-2019.png"
+    },
+    {
+        "name": "Git",
+        "icon": "https://img.icons8.com/color/48/000000/git.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "Google Colab",
+        "icon": "https://img.icons8.com/color/48/google-colab.png"
+    },
+    {
+        "name": "Jupyter",
+        "icon": "https://img.icons8.com/?size=45&id=0JUBXbNc9AaZ&format=png&color=000000"
+    },
+    {
+        "name": "VS Code",
+        "icon": "https://img.icons8.com/color/48/visual-studio-code-2019.png"
+    },
+    {
+        "name": "AppSheet",
+        "icon": "https://img.icons8.com/?size=45&id=YEsK32c4dCZY&format=png&color=000000"
+    },
+    {
+        "name": "Google Sheets",
+        "icon": "https://img.icons8.com/color/48/google-sheets.png"
+    },
+    {
+        "name": "PowerPoint",
+        "icon": "https://img.icons8.com/color/48/ms-powerpoint.png"
+    },
+    {
+        "name": "Trello",
+        "icon": "https://img.icons8.com/color/48/trello.png"
+    },
+    {
+        "name": "Notion",
+        "icon": "https://img.icons8.com/?size=48&id=F6H2fsqXKBwH&format=png&color=000000"
+    },
+    {
+        "name": "Looker Studio",
+        "icon": "https://img.icons8.com/?size=45&id=SruJhzn0nnLl&format=png&color=000000"
+    }
+    
+]

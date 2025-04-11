@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id="favicon" rel="shortcut icon" href="/assets/images/me.png" type="image/x-png">
+    <title>Projetos | Portfolio Vinicius Santos</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+    <a href="/" class="logo"><i class="fab fa-node-js"></i> Vinicius</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+       <a href="/#home">Home</a>
+       <a href="/#about">Sobre</a>
+       <a href="/#skills">Skills</a>
+       <a href="/#education">Educação</a>
+       <a class="active" href="/#work">Trabalho</a>
+       <a href="/#experience">Experiências</a>
+    </nav>
+</header>
+<!-- navbar ends -->
+
+<!-- work project section starts -->
+<section class="work" id="work">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projetos <span>Desenvolvidos</span></h2>
+
+    <div id="filters" class="button-group">
+        <button class="btn is-checked" data-filter="*">Alguns Projetos</button>
+        <button class="btn" data-filter=".DataMining">Mineração de Dados</button>
+        <button class="btn" data-filter=".ArtificialIntelligence">Inteligência Artificial</button>
+        <button class="btn" data-filter=".portfolio">Portfolio</button>
+        <button class="btn" data-filter=".UX">Web</button>
+    </div>
+
+    <div class="box-container" id="projectsContainer">
+        <!-- Projetos serão carregados dinamicamente aqui -->
+    </div>
+
+    <div class="backbtn">
+        <a href="/#work" class="btn">
+            <i class="fas fa-arrow-left"></i>
+            <span>Voltar para Home</span>
+        </a>
+    </div>
+</section>
+<!-- work project section ends -->
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Vinicius Santos. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com/ViniciusKanh" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/vinicius-souza-santoss" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- scroll top btn -->
+<a href="#" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- Scripts -->
+<script>
+    async function loadProjects() {
+        try {
+            const response = await fetch("projects.json");
+            const projects = await response.json();
+            const projectsContainer = document.getElementById("projectsContainer");
+
+            projects.forEach(project => {
+                const projectElement = document.createElement("div");
+                projectElement.classList.add("box", "tilt", project.category);
+                projectElement.innerHTML = `
+                    <img src="${project.image}" alt="${project.name}" />
+                    <div class="content">
+                        <div class="tag">
+                            <h3>${project.name}</h3>
+                        </div>
+                        <div class="desc">
+                            <p>${project.description}</p>
+                            <div class="btns">
+                                <a href="${project.live}" class="btn" target="_blank">
+                                    <i class="fas fa-eye"></i> Ver Projeto
+                                </a>
+                                <a href="${project.code}" class="btn" target="_blank">
+                                    Código <i class="fas fa-code"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                projectsContainer.appendChild(projectElement);
+            });
+        } catch (error) {
+            console.error("Erro ao carregar os projetos:", error);
+        }
+    }
+    loadProjects();
+
+    // Correção do menu responsivo
+    document.getElementById('menu').addEventListener('click', function() {
+        document.querySelector('.navbar').classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

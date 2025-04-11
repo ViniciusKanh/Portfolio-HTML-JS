@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background: #2ec733;
+  color: #fff;
+}
+
+/* Scrollbar */
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(202, 235, 202);
+}
+html::-webkit-scrollbar-thumb {
+  background: #066b04;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 5%;
+  height: 6.5rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(146, 176, 146, 0.3);
+  z-index: 1000;
+}
+
+header .logo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0b2e0e;
+  display: flex;
+  align-items: center;
+}
+header .logo i {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+header .navbar {
+  display: flex;
+  gap: 2rem;
+}
+header .navbar a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #0b2e0d;
+  transition: 0.3s;
+}
+header .navbar a:hover,
+header .navbar a.active {
+  color: #02e825;
+  border-bottom: 2px solid #02d91b;
+  padding-bottom: 0.3rem;
+}
+
+/* Menu hambúrguer */
+#menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(24, 2, 63);
+  display: none;
+}
+
+/* Responsividade do menu */
+@media (max-width: 900px) {
+  #menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -100%;
+    width: 75%;
+    height: 100%;
+    flex-direction: column;
+    background: #0c330e;
+    align-items: center;
+    padding-top: 2rem;
+    transition: 0.3s;
+  }
+
+  header .navbar a {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  header .navbar a:hover {
+    background: #027817;
+  }
+
+  header .navbar.active {
+    right: 0;
+  }
+}
+
+/* Work Section */
+.work {
+  background: linear-gradient(to bottom, #033309, #012e09);
+  margin-top: 6.5rem;
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+.work h2 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.work .button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.work .button-group .btn {
+  padding: 1rem 2rem;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.work .button-group .btn:hover,
+.work .button-group .btn.is-checked {
+  background: #fff;
+  color: #000;
+}
+
+/* Grid responsivo */
+.work .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.work .box {
+  border-radius: 5px;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  height: 30rem;
+  background: #fff;
+  position: relative;
+}
+
+.work .box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.work .box .content {
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.work .box:hover .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.work .desc p {
+  font-size: 1.6rem;
+}
+
+.work .desc .btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.work .desc .btns .btn {
+  padding: 1.2rem 2rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #000;
+  transition: 0.3s;
+}
+
+.work .desc .btns .btn:hover {
+  background: #027817;
+}
+
+/* Botão de voltar */
+.backbtn {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.backbtn .btn {
+  padding: 1.6rem 3rem;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.backbtn .btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Botão de rolagem */
+#scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  background: #ffae00;
+  color: rgb(13, 0, 44);
+  border-radius: 50%;
+  display: none;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+#scroll-top.active {
+  display: block;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .work .button-group {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .work .box-container {
+    grid-template-columns: 1fr;
+  }
+}
