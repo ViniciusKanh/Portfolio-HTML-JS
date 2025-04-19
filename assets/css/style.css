@@ -577,8 +577,18 @@ header .navbar ul li a:hover {
 }
 .education .box-container .box .image {
   flex: 1 1 20rem;
-  width: 100%;
+  max-width: 220px;         /* Limita a largura máxima */
+  height: auto;             /* Mantém proporção vertical */
+  padding: 1rem;            /* Espaçamento interno opcional */
 }
+
+.education .box-container .box .image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;       /* Garante bom preenchimento */
+  border-radius: 0.5rem;
+}
+
 .education .box-container .box img {
   object-fit: cover;
   position: relative;

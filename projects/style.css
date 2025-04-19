@@ -168,64 +168,87 @@ header .navbar a.active {
 /* Grid responsivo */
 .work .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
 }
 
 .work .box {
-  border-radius: 5px;
-  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  height: 30rem;
-  background: #fff;
   position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
 
 .work .box img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  aspect-ratio: 16 / 10;
 }
 
 .work .box .content {
-  padding: 1.5rem;
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
-  text-align: center;
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition: opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
 .work .box:hover .content {
   opacity: 1;
-  transform: translateY(0);
 }
 
-.work .desc p {
-  font-size: 1.6rem;
+.work .box .tag h3 {
+  font-size: 2.1rem;
+  color: #03fc03;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-.work .desc .btns {
+.work .box .desc p {
+  font-size: 1.45rem;
+  line-height: 1.8;
+  color: #e2e2e2;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem 1.2rem;
+  border-radius: 0.6rem;
+  margin-bottom: 2rem; /* aumenta o espaçamento com os botões */
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+  text-align: justify;
+}
+
+
+.work .box .desc .btns {
   display: flex;
-  justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.work .desc .btns .btn {
-  padding: 1.2rem 2rem;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  color: #fff;
-  background: #000;
-  transition: 0.3s;
+.work .box .desc .btns .btn {
+  flex: 1 1 48%;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  text-align: center;
+  background: #03fc03;
+  color: #000;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease;
 }
 
-.work .desc .btns .btn:hover {
-  background: #027817;
+.work .box .desc .btns .btn:hover {
+  background: #00c324;
 }
 
 /* Botão de voltar */
@@ -284,3 +307,50 @@ header .navbar a.active {
     grid-template-columns: 1fr;
   }
 }
+
+footer {
+  background: #012b03;
+  padding: 3rem 2rem;
+  color: #eaeaea;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.social-links a {
+  width: 40px;
+  height: 40px;
+  font-size: 1.6rem;
+  background: #05c425;
+  color: #012b03;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(5, 196, 37, 0.4);
+}
+
+.social-links a:hover {
+  background: #fff;
+  color: #05c425;
+  transform: translateY(-3px);
+}
+

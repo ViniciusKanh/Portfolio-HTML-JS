@@ -107,7 +107,7 @@
         "name": "Dissolved Gas Analysis (DGA) Machine Learning",
         "category": "ArtificialIntelligence",
         "image": "../assets/images/DGA.png",
-        "description": "DESENVOLVIMENTO DE UMA FERRAMENTA DE AUXÍLIO À MANUTENÇÃO PREDITIVA E PREVENTIVA PARA O DIAGNÓSTICO DE FALHAS EM TRANSFORMADORES DE POTÊNCIA EMPREGANDO-SE O PROCESSAMENTO DE DADOS E O ALGORITMO FLORESTA DE CAMINHOS ÓTIMOS",
+        "description": "Análise de Gás Dissolvido (DGA) com Aprendizado de Máquina",
         "live": "https://nbviewer.org/github/ViniciusKanh/IC_MachineLearning_DGA/blob/main/DGA_OPF_IC.ipynb",
         "code": "https://github.com/ViniciusKanh/IC_MachineLearning_DGA"
     }
